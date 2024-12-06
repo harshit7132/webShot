@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>WebShot</title>
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+    <style>
+        /* Scrollable content box */
+        #scrollable-box {
+            width: 100%;
+            height: 400px;
+            overflow: auto;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-sizing: border-box;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ========== Start Navbar Section ========== -->
+    <header class="section-navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="#">
+                    <h1> WebShot </h1>
+                </a>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li class="nav-items" style="list-style-type: none;">
+                        <a class="nav-link" href="#about"> About </a>
+                    </li>
+                    <li class="nav-items">
+                        <a class="nav-link" href="#tech"> Tech </a>
+                    </li>
+                    <li class="nav-items">
+                        <a class="nav-link" href="#contact"> Contact </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- ========== End Navbar Section ========== -->
+
+    <!-- ========== Start Hero Section ========== -->
+    <main>
+        <section class="hero-section">
+            <div class="container grid grid-two--cols">
+                <div class="hero-containt">
+                    <div class="hero-subheading">
+                        <marquee direction="left"> Be lazy coder... </marquee>
+                    </div>
+                    <div class="hero-heading">
+                        <h2> Extract <br> your code </h2>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <figure>
+                        <script type="module" src="{{ url_for('static', filename='js/spline-viewer.js') }}"></script>
+                        <spline-viewer frame url="{{ url_for('static', filename='models/scene.splinecode') }}"></spline-viewer>
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- ========== End Hero Section ========== -->
+
+    <!-- ========== Start URL Box Section ========== -->
+    <section class="url-box--section" id="urlbox">
+        <div class="container">
+            <div class="title-heading">
+                <center>
+                    <h2> Transforms URLs into </h2>
+                    <p> Copy Link of Webpage | Paste in the box | Click on generate </p>
+                </center>
+            </div>
+            <div class="url-box">
+                <form method="POST" action="/">
+                    <center><input type="text" name="url" placeholder="Enter Your URL to extract code" required></center>
+                    <center><button type="submit" class="submit-btn">Generate</button></center>
+                </form>
+
+                {% if data %}
+                <div class="scraped-data">
+                    <h2>Scraped HTML:</h2>
+                    <div id="scrollable-box">
+                        <!-- The content will be displayed inside this box -->
+                        <div id="html-content">{{ data.html | e }}</div>
+                    </div>
+
+                    <br>
+                    <a href="{{ url_for('download', file_type='html', url=request.form['url']) }}">Download HTML</a>
+
+                    <h2>CSS Links:</h2>
+                    <ul>
+                        {% for link in data.css_links %}
+                        <li><a href="{{ link }}" target="_blank">{{ link }}</a></li>
+                        {% endfor %}
+                    </ul>
+                    <br>
+                    <a href="{{ url_for('download', file_type='css', url=request.form['url']) }}">Download CSS Links</a>
+
+                    <h2>JavaScript Links:</h2>
+                    <ul>
+                        {% for link in data.js_links %}
+                        <li><a href="{{ link }}" target="_blank">{{ link }}</a></li>
+                        {% endfor %}
+                    </ul>
+
+                    <br>
+                    <a href="{{ url_for('download', file_type='js', url=request.form['url']) }}">Download JS Links</a>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </section>
+    <!-- ========== End URL Box Section ========== -->
+
+</body>
+
+</html>

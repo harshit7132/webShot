@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap');
+
+/* basic */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    background: var(--main-color);
+    scroll-snap-type: y mandatory;
+    scroll-snap-align: start;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    /* font-family: "MuseoModerno"; */
+    font-family: "Orbitron";
+    color: var(--para-colour);
+}
+
+p, a, li{
+    letter-spacing: .2rem;
+    line-height: 1.56;
+    font-family: "Orbitron";
+}
+
+a{
+    text-decoration: none;
+    color: var(--para-colour);
+}
+
+li{
+    list-style: none;
+}
+
+:is(a, p, pre, b, img, h1, h2, h3, h4, h5, h6)::selection{
+    text-shadow: 0 0 7px var(--selection-color);
+}
+
+::-webkit-scrollbar{
+    width: 0rem;
+    height: 0rem;
+}
+
+/* theam */
+
+:root{
+    --main-color: #000 ;
+    --heading-colour : #FEFAF6;
+    --para-colour : #F7F7F7;
+    /* --linear-border: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(182,239,251,1) 45%, rgba(46,230,206,1) 100%); */
+    --linear-border: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(124,57,221,1) 85%, rgba(139,63,247,1) 100%);
+    --linear-border-rev: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(124,57,221,1) 85%, rgba(139,63,247,1) 100%);   ;
+    --selection-color: red;
+    --red-color: rgb(91,42,160);
+
+
+    /* --main-color: #212121;
+    --supporting-color: #ebf3fe;
+    --font-color: #424242;
+    --bg-color: #f7fcff;
+    --heading-color: #000a19;
+    --para-color: #504e4d;
+    --hero-heaing-color: #003b99;
+    --white-color: #ffffff;
+    --btn-hover-bg-color: #003b99;
+    --btn-box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+    --footer-bg-color: #040d12; */
+
+}
+
+
+/* layout */
+section{
+    scroll-snap-align: start;
+}
+
+section .section-hero .container:first-child{
+    position: relative;
+    top: 20rem;
+    right: 10rem;
+}
+
+.container{
+    max-width: 142rem;
+    margin: 0 auto;
+    padding: 9.6rem 2.4rem;
+    color: var(--heading-colour);
+}
+
+.grid{
+    display: grid;
+}
+
+.grid-two--cols{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-three--cols{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-four--cols{
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-five--cols{
+    grid-template-columns: repeat(5, 1fr);
+}
+
+:is(.acnoledgement-section, .timelin-section, .about-section, .resources-section) .container:nth-child(1){
+    padding: 9.6rem 2.4rem .5rem;
+}
+
+
+/* module / resuable  */
+
+.container{
+    & .title-heading{
+        font-size: 2.5rem;
+    }
+    & .title-subheading{
+        font-size: 1.8rem;
+    }
+}
+
+/* static */
+
+/***** Navbar Section *****/
+
+.section-navbar{
+    box-shadow: 0 0 2rem var(--red-color);
+    
+    & .container{
+        padding: 1.4rem 2.4rem;
+        display: flex;
+        justify-content: space-between;
+
+        & .navbar-brand{
+            font-size: 2.4rem;
+
+            & h1{
+                font-family: "MuseoModerno" !important;
+            }
+        }
+
+        & .navbar{
+            display: flex;
+            align-items: center;
+        }
+
+        & .navbar ul{
+            display: flex;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            gap: 2rem;
+            padding: .4rem 1.5rem;
+            border-radius: 1.5rem;
+            border: .1rem solid var(--red-color);
+
+            & li{
+                list-style-type: "|";
+                padding-left: 1rem;
+                position: relative;
+
+                &::after{
+                    content: "";
+                    width: 0%;
+                    position: absolute;
+                    bottom: .1rem;
+                    left: .7rem;
+                    border-bottom: .1rem solid var(--red-color);
+                    transition: all .2s linear;
+                }
+                &:hover::after{
+                    width: 95%;
+                }
+            }
+
+        }
+    }
+}
+
+/***** End Navbar Section *****/
+
+
+/***** Hero Section *****/
+
+.hero-section{
+    & .container{
+        align-items: center;
+        position: relative;
+        padding: 9rem 2.4rem;
+
+        & .hero-containt{
+            font-size: 1.4rem;
+            text-transform: capitalize;
+            font-family: "Orbitron";
+
+            & .hero-subheading{
+                max-width: 27rem;
+                height: 4rem;
+                font-size: 2.4rem;
+                border: 0.2rem solid var(--red-color);
+                border-radius: 2rem;
+                padding: .5rem 1.4rem;
+            }
+            
+            & .hero-heading{
+                font-size: 4.8rem;
+                & h2{
+                    font-family: "Orbitron";
+                }
+            }
+        }
+
+        & .hero-image{
+            height: 60rem;
+            
+            & figure{
+                display: grid;
+                place-items: center;
+                width: 100%;
+                height: 100%;
+
+                & img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            
+        }
+
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: -20rem;
+            left: -20rem;
+            width: 40rem;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            background-color: var(--red-color);
+            opacity: 0.3;
+            filter: blur(10rem);
+        }
+    }
+}
+
+/***** End Hero Section *****/
+
+/***** aknowledgement Section *****/
+
+.aknowledgement-section{
+    & .container:nth-child(2){
+        width: 100rem;
+    }
+
+    & .grid{
+        gap: 8rem;
+        justify-content: center;
+
+        & .aknowledgement-div{
+            width: 100%;
+            height: auto;
+            border: .2rem solid var(--para-colour) ;
+            padding: .8rem 2.4rem;
+            font-size: 1.4rem;
+            margin-top: -10rem;
+            
+            & h3{
+                margin-bottom: 1rem;
+            }
+            
+            &:nth-child(2){
+                /* margin-top: 8rem; */
+            }
+            &:nth-child(3){
+                /* margin-top: 20rem; */
+            }
+
+        }
+
+    }
+}
+
+/***** End aknowledgement Section *****/
+
+
+/***** About Section *****/
+
+.about-section{
+    & .container{
+        font-size: 2rem;
+               
+        &:nth-child(2){
+            padding: 1rem 2.4rem;
+
+            & .title-heading {
+                /* font-size: 1.8rem; */
+                margin: 8rem 0rem -5rem;
+            }
+        }
+
+        &:nth-child(3){
+            width: 130rem;
+            padding-bottom: 10rem;
+            gap: 3.8rem;
+        }
+
+        & .about-div{
+            padding: 1rem 2rem;
+            text-align: center;
+            box-shadow: 0 0 0 .1rem rgba(98, 83, 83, 0.539);
+            border-radius: 3rem;
+
+            & .icon figure img{
+                width: 15rem;
+                border-radius: 50%;
+                margin: 1.4rem 0rem;
+                box-shadow: 0 0 2rem var(--red-color);
+                
+                &:hover{
+                    /* box-shadow: 0 0 2rem white; */
+                }
+            }
+            & h3{
+                font-size: 2.4rem;
+                text-transform: capitalize;
+            }
+            &:hover{
+                box-shadow: 0 0 2rem var(--red-color);
+            }
+        }
+
+    }
+    
+}
+
+/***** End About Section *****/
+
+/***** URL Section *****/
+
+.url-box--section{
+    margin-bottom: 5rem;
+
+    & .container{
+        & h2{
+            font-size: 5.6rem;
+            padding-top: 5rem;
+        }
+
+        & input[type=text]{
+            width: 100rem;
+            height: 5rem;
+            font-size: 1.8rem;
+            font-weight: 700;
+            padding: 1.4rem 2.4rem;
+            border-radius: 2rem;
+            margin: 8rem 3rem 5rem 0;
+            color: var(--main-color);
+            background: var(--linear-border);
+        }
+        & .submit-btn{
+            background: var(--linear-border-rev);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: var(--para-colour);
+            font-size: 3.8rem;
+            font-weight: 900;
+            padding: .8rem 2.4rem;
+            border: none;
+            border-radius: 3rem;
+            margin-top: -2rem;
+            cursor: pointer;            
+        }
+    }
+}
+
+/***** End URL Section *****/
+
+
+/***** Resources Section *****/
+
+.resources-section .grid{
+        gap: 3.2rem;
+
+        & .resources-div{
+            padding: 2.4rem;
+            font-size: 1.4rem;
+            
+            & .icon{
+                font-size: 9.6rem;
+                width: 15rem;
+                aspect-ratio: 1;
+                /* background-color: var(--selection-color); */
+                border-radius: 50%;
+                background-color: rgba(208, 208, 251, 0.1);
+                color: rgba(208, 208, 251, 0.7);
+                display: grid;
+                place-items: center;
+                margin-bottom: 5rem;
+            }
+            &:nth-child(2){
+                & .icon{
+                    background-color: rgba(249, 0, 0, 0.1);
+                    color: rgba(249, 0, 0, 0.7);
+                }
+            }
+            &:nth-child(3){
+                & .icon{
+                    background-color: rgba(245, 249, 0, 0.1);
+                    color: rgba(245, 249, 0, 0.7);
+                }
+            }
+            &:nth-child(4){
+                & .icon{
+                    background-color: rgba(25, 249, 0, 0.1);
+                    color: rgba(25, 249, 0, 0.7);
+                }
+            }
+            &:nth-child(5){
+                & .icon{
+                    background-color: rgba(0, 249, 241, 0.1);
+                    color: rgba(0, 249, 241, 0.7);
+                }
+            }
+
+        }
+}
+
+
+/***** End Resources Section *****/
+
+/***** Contact Section *****/
+
+.contact-section{
+    & .container{
+        position: relative;
+        & .title-heading{
+            & .contact-heading{
+                font-size: 2.4rem;
+
+                & h2{
+                    margin-bottom: 2rem;
+                }
+
+                & .btn{
+                    padding: 1rem 5rem;
+                    width: 25rem;
+
+                    margin-right: 50rem;
+                    
+                    & .contact-us{
+                        width: 22rem;
+                        padding: 1rem 2rem;
+                        border-radius: 2rem;
+                        border: .1rem solid var(--red-color);
+                        cursor: pointer;
+
+                        &:hover{
+                            background: var(--linear-border);
+                            color: var(--main-color);
+                        }
+
+                    }
+                }
+            }
+        }
+
+        & .right-end{
+            font-size: 2.4rem;
+            position: absolute;
+            right: 0;
+            bottom: -2rem;
+        }
+    }
+}
+
+/***** End Contact Section *****/
