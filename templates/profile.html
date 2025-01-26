@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webshot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/profile.css') }}">
+</head>
+
+<body>
+    <div class="box">
+        <span class="borderLine"></span>
+        <form id="login-form">
+            <h2>Profile</h2>
+
+            <!-- Email Input -->
+            <div class="inputBox">
+                <input type="email" id="email" required="required">
+                <span>Email</span>
+                <i></i>
+            </div>
+
+            <!-- First Name Input -->
+            <div class="inputBox">
+                <input type="text" id="first-name" required="required">
+                <span>First Name</span>
+                <i></i>
+            </div>
+
+            <!-- Last Name Input -->
+            <div class="inputBox">
+                <input type="text" id="last-name" required="required">
+                <span>Last Name</span>
+                <i></i>
+            </div>
+
+            <!-- Password Input -->
+            <div class="inputBox">
+                <input type="password" id="password" required="required">
+                <span>Password</span>
+                <i></i>
+            </div>
+            <br>
+
+            <button type="submit" value="Update" id="update-btn">Update Profile</button>
+            <br>
+            <p id="loading-message" style="display: none; color:#fff;">Updating profile, please wait...</p>
+            <p id="data-loading-message" style="display: none; color:#fff;">Loading user data, please wait...</p>
+        </form>
+    </div>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+        import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js";
+        import { getFirestore, doc, getDoc, updateDoc } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js";
+
+        // Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyAT53j_k9Alzr7O2HDmeQ8_tfZTdQnde48",
+            authDomain: "webshot-c0c2a.firebaseapp.com",
+            databaseURL: "https://webshot-c0c2a-default-rtdb.firebaseio.com",
+            projectId: "webshot-c0c2a",
+            storageBucket: "webshot-c0c2a.firebasestorage.app",
+            messagingSenderId: "917217158557",
+            appId: "1:917217158557:web:4715f7e0bf7208cf79bb74",
+            measurementId: "G-E8JJ3NZ6KE"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const db = getFirestore(app);
+
+        const loginForm = document.getElementById('login-form');
+        const emailInput = document.getElementById('email');
+        const firstNameInput = document.getElementById('first-name');
+        const lastNameInput = document.getElementById('last-name');
+        const passwordInput = document.getElementById('password');
+        const loadingMessage = document.getElementById('loading-message');
+        const dataLoadingMessage = document.getElementById('data-loading-message');
+
+        async function loadUserData() {
+            try {
+                dataLoadingMessage.style.display = 'block'; // Show the loading message for data fetch
+
+                const user = auth.currentUser;
+                if (user) {
+                    const docRef = doc(db, "users", user.uid);
+                    const docSnap = await getDoc(docRef);
+
+                    if (docSnap.exists()) {
+                        const userData = docSnap.data();
+                        emailInput.value = userData.email || '';
+                        firstNameInput.value = userData.firstName || '';
+                        lastNameInput.value = userData.lastName || '';
+                        passwordInput.value = userData.password || ''; 
+                    } else {
+                        console.log("No such document!");
+                    }
+                }
+            } catch (error) {
+                console.error("Error fetching user data:", error);
+            } finally {
+                dataLoadingMessage.style.display = 'none'; // Hide the loading message after data is loaded
+            }
+        }
+
+        loginForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const email = emailInput.value.trim();
+            const firstName = firstNameInput.value.trim();
+            const lastName = lastNameInput.value.trim();
+            const password = passwordInput.value.trim();
+
+            loadingMessage.style.display = 'block'; // Show loading message while updating profile
+
+            try {
+                const user = auth.currentUser;
+                if (user) {
+                    const docRef = doc(db, "users", user.uid);
+                    await updateDoc(docRef, {
+                        email: email,
+                        firstName: firstName,
+                        lastName: lastName,
+                        password: password
+                    });
+                    alert('Profile Updated Successfully 🎉');
+                }
+            } catch (error) {
+                console.error('Error updating profile:', error);
+                alert('Failed to update profile.');
+            } finally {
+                loadingMessage.style.display = 'none'; // Hide loading message after update
+            }
+        });
+
+        // Load user data on page load
+        auth.onAuthStateChanged((user) => {
+            if (user) {
+                loadUserData();
+            } else {
+                alert('No user logged in.');
+            }
+        });
+
+    </script>
+</body>
+
+</html>

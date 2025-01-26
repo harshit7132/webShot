@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/signUp.css') }}">
+    <title>WebShot Sign-Up Form</title>
+    <style>
+        /* Loader Style */
+        .loader {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+            /* Hidden by default */
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Disable button while loading */
+        .disabled {
+            background-color: #cccccc;
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <span class="borderLine"></span>
+        <form id="signup-form">
+            <h2>Sign Up</h2>
+
+            <!-- First Name -->
+            <div class="inputBox">
+                <input type="text" required="required" id="firstName" aria-label="First Name">
+                <span>First Name</span>
+                <i></i>
+            </div>
+
+            <!-- Last Name -->
+            <div class="inputBox">
+                <input type="text" required="required" id="lastName" aria-label="Last Name">
+                <span>Last Name</span>
+                <i></i>
+            </div>
+
+            <!-- Email -->
+            <div class="inputBox">
+                <input type="email" required="required" id="email" aria-label="Email">
+                <span>Email</span>
+                <i></i>
+            </div>
+
+            <!-- Password -->
+            <div class="inputBox">
+                <input type="password" required="required" id="password" aria-label="Password">
+                <span>Password</span>
+                <i></i>
+            </div>
+
+            <br>
+            <br>
+
+            <!-- Sign-Up Button -->
+            <button id="submit" type="button">Create an Account</button>
+
+            <div class="account">
+                <pre><span class="para">Already have an account?</span>              <a href="{{ url_for('register')}}" class="button">Sign In</a></pre>
+            </div>
+        </form>
+
+        <!-- Loader Element -->
+        <div class="loader" id="loader"></div>
+    </div>
+
+    <!-- Firebase Setup -->
+    <script type="module">
+        // Import Firebase SDKs
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+        import { getAuth, createUserWithEmailAndPassword, updateProfile } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js";
+        import { getFirestore, doc, setDoc } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js";
+
+        // 🔥 Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyAT53j_k9Alzr7O2HDmeQ8_tfZTdQnde48",
+            authDomain: "webshot-c0c2a.firebaseapp.com",
+            databaseURL: "https://webshot-c0c2a-default-rtdb.firebaseio.com",
+            projectId: "webshot-c0c2a",
+            storageBucket: "webshot-c0c2a.firebasestorage.app",
+            messagingSenderId: "917217158557",
+            appId: "1:917217158557:web:4715f7e0bf7208cf79bb74",
+            measurementId: "G-E8JJ3NZ6KE"
+        };
+
+        // 🔥 Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const db = getFirestore(app);
+
+        // 🌟 Select form inputs
+        const signupForm = document.getElementById('signup-form');
+        const firstNameInput = document.getElementById('firstName');
+        const lastNameInput = document.getElementById('lastName');
+        const emailInput = document.getElementById('email');
+        const passwordInput = document.getElementById('password');
+        const submitButton = document.getElementById('submit');
+        const loader = document.getElementById('loader');
+
+        // 🌟 Handle form submission
+        submitButton.addEventListener('click', async () => {
+            const firstName = firstNameInput.value.trim();
+            const lastName = lastNameInput.value.trim();
+            const email = emailInput.value.trim();
+            const password = passwordInput.value.trim();
+
+            // Check if all fields are filled
+            if (!firstName || !lastName || !email || !password) {
+                alert('Please fill in all the fields.');
+                return;
+            }
+
+            // Disable button and show loader
+            submitButton.classList.add('disabled');
+            loader.style.display = 'block';
+
+            try {
+                // 🔥 Sign up user using Firebase Auth
+                const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+                const user = userCredential.user;
+
+                // 🛠️ Update user's display name
+                await updateProfile(user, {
+                    displayName: `${firstName} ${lastName}`
+                });
+
+                // 🔥 Store user details in Firestore
+                await setDoc(doc(db, 'users', user.uid), {
+                    firstName: firstName,
+                    lastName: lastName,
+                    email: email,
+                    password: password,
+                    count : 2,
+                    createdAt: new Date().toISOString()
+                });
+
+                alert('Account created successfully! 🎉');
+                console.log('User Created and Data Saved in Firestore:', user);
+
+                // Optionally, redirect user to the login page
+                window.location.href = "{{ url_for('register') }}";
+
+            } catch (error) {
+                console.error('Error Signing Up:', error.message);
+                alert(`Error: ${error.message}`);
+            } finally {
+                // Hide loader and enable button after operation
+                loader.style.display = 'none';
+                submitButton.classList.remove('disabled');
+            }
+        });
+    </script>
+
+</body>
+
+</html>

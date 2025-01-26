@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website File Generator</title>
+</head>
+<body>
+    <h1>Website File Generator</h1>
+    <form id="urlForm">
+        <label for="url">Enter Website URL:</label><br>
+        <input type="text" id="url" name="url" required><br><br>
+        <button type="submit">Generate Files</button>
+    </form>
+    <!-- <iframe src="../index.html" title="W3Schools Free Online Web Tutorials"></iframe> -->
+    <!-- <div id="message" style="text-align: center; "></div> -->
+    <pre id="message">
+        <!-- Place the content of your text file here -->
+        
+    </pre>
+    <!-- <div id="html_content"></div> -->
+
+    <script>
+        document.getElementById('urlForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var url = document.getElementById('url').value;
+            fetch('/generate-files', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: new URLSearchParams({
+                    'url': url
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('message').textContent = data.message || data.error;
+                document.getElementById('html_content').textContent = data.message || data.error;
+               
+            })
+           
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

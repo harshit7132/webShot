@@ -1,0 +1,189 @@
+�r@��schema�scene�frames�shared�version�q�rA��objects�publish�styles���rB��fi�id�data�children�$a218fcc3-276b-49b9-b485-49037fd14f5f�rC��type�states�events�visible�raycastLock�physics�pathSnapping�position�rotation�scale�hiddenMatrix�cloner�backgroundColor�postprocessing�fog�globalPhysics�ambient�ao�shadow�publish�camera�name�Page�������rD��enabled�fusedBody�rigidBody�density�pointMass�gravityScale�friction�damping�restitution�colliderType�enabledRotation�enabledTranslation�visibilityªpositioned�?��?ə������convex���Ó����rE��pathId�slide�offset�orientation��tangential������rF��isColor�r�g�b�isColorA�a���rG��enabled�pixelation�bloom�chromaticAberration�vignette�hueSaturation�brightnessContrast�depthOfField�noise��rH��opacity�blendFunction�enabled�granularity��rI��opacity�blendFunction�enabled�intensity�blurScale�luminanceThreshold�luminanceSmoothing�kernelSize��?��?��������rJ��opacity�blendFunction�enabled�offset
+�rK��opacity�blendFunction�enabled�darkness�offset
+��rL��opacity�blendFunction�enabled�hue�saturation
+��rM��opacity�blendFunction�enabled�brightness�contrast
+��?��rN��opacity�blendFunction�enabled�focalLength�focusDistance�bokehScale
+��d�rO��opacity�blendFunction�enabled�?���������rP��enabled�useBackgroundColor�color�near�far���rQ��r�g�b�?����������rR��usePhysics�gravity���rS��enabled�color�intensity�Q�?�zzzzzz�?�zzzzzz�?�zzzzzz�?��rT��occlusion�aoFullRes�radius�bias�aoColor����?�Q�?��?��?��rU��softShadowQuality�low�rV��playCamera�gameControlObject�$b263adf3-847f-407b-9d22-97e7047b8d1e��rW��states�events�visible�raycastLock�physics�pathSnapping�position�rotation�scale�hiddenMatrix�cloner�far�type�perspective�orthographic�up�isUpVectorFlipped�targetOffset����D�visibilityêpositioned�?��?ə������convex���Ó���E��tangential��@}����@w�i�"���@����B: ���I��':��@G��g.P��@EY	�պU�������OrthographicCamera�rX��near�fov�zoom�F-�rY��near�zoom���y`�?�݃b�m�����Portal 2�B��d���[�$715d434d-d5b0-493b-b7f6-7e4d9286cb3f�rZ��states�events�visible�type�raycastLock�physics�pathSnapping�position�rotation�scale�hiddenMatrix�cloner�flatShading�wireframe�side�castShadow�receiveShadow�geometry�material�name���r[��fi�id�data�?�c����$a91e837d-7347-4f3c-983b-aded1f2a26c1�r\��name�geometry�material�scale�State�r]��r^��layers�]���[�?�\�o��$�$a6a5f59e-f730-40bf-9b24-504c9d83a83d�r_��type�disabled�actions�Start���[�?�q�p�cw�$35806ed4-0bcb-4d90-9e5f-05eba6477ca8�r`��type�object�tweens�repeat�delay�delayDirection�direction�runMode�Transition�$715d434d-d5b0-493b-b7f6-7e4d9286cb3f���ra��id�data�fi�$07327f47-fcce-4791-9c40-4698ee72b87e�rb��state�repeat�delay�delayDirection�direction�duration�easing���start-once�normal��
+a�$9242e519-6f6e-44ea-8182-98f2118a6e10b�$a91e837d-7347-4f3c-983b-aded1f2a26c1�start-once�normal���start-once�normal�OnceäMesh�D�visibilityêpositioned�?��?ə������convex���Ó���E��tangential�������@m�����rc��disabled�type�hideBase�count�radial�toObject�linear�grid�randomness�randomnessObject¨toObject��d�rd��radius�start�end�alignment�axis�scale�rotation�position�@ba=���h¡y����re��object�spreadType�scale�rotation�position�axis�seed�count�align�$9a9708a3-a15d-4785-a3ea-4c37172d1539�random����x�c�normal�rf��scale�rotation�position����@T7�4!���rg��count�size�useCenter���@T7�4!���@T7�4!���@T7�4!�����rh��strength�scale�rotation�position�movement�seed�freqScale�noiseType�d��?��������?��������?���������
+�perlin�����ri��width�widthSegments�heightSegments�phiStart�phiLength�thetaStart�thetaLength�height�depth�type�@	�7�����@�@�@!�TD-̴�@	�7�����@	�7�����SphereGeometry�$18b4b78f-709b-4c1b-9d22-d9fbf9f5cc1d�Star�B��k��X8�$9a9708a3-a15d-4785-a3ea-4c37172d1539Z����äMesh�D�visibilityêpositioned�?��?ə������convex���Ó���E��tangential���~�&�\�@�W����9�������������rj��width�depth�cornerRadius�cornerType�extrudeBevelSize�extrudeBevelSegments�height�type�@�O�?����@Q́H����@�)�t��@�RectangleGeometry�$92707c39-baab-48cc-8d7e-a1922408364c�Space�B��Lv�U9�$901920c4-9d51-4b87-bb58-fd3e6826258d�rk��name�type�states�events�visible�raycastLock�physics�pathSnapping�position�rotation�scale�hiddenMatrix�cloner�Portal�Empty������D�visibilityêpositioned�?��?ə������convex���Ó���E��tangential��@�C���-G��#7���L��i���i���B�?�D�ic�4�$b51a6e5d-c446-4d40-a742-98499b015dc7�rl��name�states�events�visible�raycastLock�physics�pathSnapping�position�rotation�scale�hiddenMatrix�cloner�type�flatShading�wireframe�side�castShadow�receiveShadow�geometry�materials�Portal Outline������D�visibilityêpositioned�?��?ə������convex���Ó���E��tangential��@fW��Ut�@I�V�;����?��C��:��?��C��:��?��C��:���=��Mesh�����rm��type�width�height�depth�subdivisions�data�NonParametricGeometry���v̀�rn��attributes�draco]�'��D�R�A�C�Oд���ZЙ�_�����BЕ��Я)Д��Я)��Я)��Я)Д��Я)Д��Я)Д��Я)��Я)��Я)��Я)��Я)Д��Я)Д��Я)Д��Я)Д��Я)Д��Я)��Я�k
+Ѕ��[)(Ъ�oХ(Ъ�oХ(Ъ�_�S��з�R(Ъ�oХ(Ъ�oХ(Ъ�_�S��Я)���w�MС���wЩ�BЩ�)Ѕ�R��SЊ�R��SЊ�R��SЊ�R��SЊ�R��SЊТ��SЊ�R��SЊТ��SЊТ��R�EЩ�)Ѕ�R��SЊТ��R�EЩ�wЩ�B���wЩ�B���)ЅТ��R�E���wЩ�B���wЩ�BЩ�)Ѕ�R��R�EЩ�)Ѕ�R��SЊ�R��R�EЩ�)Ѕ�R��SЊ�R��SЊТ��SЊ�R��SЊТ��R�E���)ЅТ��R�E���)ЅТ��R�EЩ�wЩ�BЩ�)ЅТ��SЊ�R��SЊТ��SЊТ��SЊ�R��SЊ�R��R�EЩ�wЩ�B���wЩ�BЩ�wЩ�B���wЩ�B���wЩ�B��Я�K�J���5Ѕ��R���R�]����{�ж�m��ж�m��ж�m��ж�m��ж�mп�m��ж�m��ж�m��ж�m����ж�m��ж�m��ж�m��6�m��ж�m��з�m��ж�mЛж�m��з�В&�IЫ�i�AС(�@�UЪН&�q����и��l�N����бб�Ъ4��ЉЩ�ZЮ�{аШ����-�j�%�Ы<��ЩЕ�q���Ы<��Ё��RЛ�d�_'�Ы<
+�BВ�<Ќ�e�_���_�X����y���vШ��К��f�MДВУ�g��dО�K �Щ�B�A�`С�	�q4�^��Е�t�Чга��������l Ї������^�гкЯ�E�HЊ6�б�cИ7Є�/&���������g�v�п����E�y�lо��Ъ�nБ�d�GЕФБЂ��РЗ3Ѕ8����ЉЂ��йЇ+����(гЉвбб�з"�����QЙ�r��{��зЎ�gж
+��X����g�h Ё��k$��ЌЫГи�З�sж�М�N��qдЦ��Х�oЖ1�j�]Ц��ЇП�G���внЯІм�w�`�*4Ы���aБЪ�i����	��Њ�ZЕг��(Є�@���oЀ�		<7�Pд
+��	��	йд�d9��Є���d�J�a�_������@кбЧЦе�Х�LЗп)�bз��RЙ��
+2ж���n�lЉе��OЍ�ББББББйС�1�Dе�y�z������&�S�R�A�l�wЦ0����*)���rБЭВ��A�МР���XЛ��Ѕ(#Ѓ�н����3�B�d+�p��Ф��!�JЫ!/>��Q�s�|�О3���b0З4�dЧ�z�4н=���B���T��Є�M�WЂ�_�e=Л��u�e�k"�YУЍб�u�['й��=ЛЯ�n��Е�.������i�L��	%НКЌ8�7�7
+Щ�ЍГГ�l�|Ў���|�bМ�}�ЙШмЊЖ%БЪ�U����\Н�A�Ы��Ѐ�[�q�|1��p���xЄ
+�~����P���Ј��Ѐ
+Щ�?�P�@�А��ЈЍ�J�Й��"йам �г7�`0Ј�h��n��Й�W�@�Ѐ3�v�E�l�T2�lд,Ѐ6�O	>Њ����>(оЀ����н��$Ж�\�C����b��НЀ�jО���������/#��n�e"����gЁ4�@�S�b.п�D*�@;��к(�`���Y�q�k�Љ�ЀЀ�hЁ
+�jВ�
+�����Г���0�Дп�L�@�@��j�Xо�p-�pЀ�h��?��жп�a�a$	�H����������ЩЄаФ1Р�����LВ�^�л4�@���L	������hЀІЊ�F�~�U�S���ЧЈЉ�CЀ�cЭЀЍ���|7�
+��.�{���Р�Q,Р���VП0�K�@�@�t���.�pЀ�h�gо��G+�N-п�_Э	��С
+�����_��7�e���mЀ	��+0Рк���������6��W�S	�hЀ>"��З������c�|Ф���Z�|�����0ЌкЀ�z�MЕ�R�>��Р��A�I�|�Ѕ4�@�WАо
+иЀГ�V�|н'
+���:�Ёй��Р����Љ���X(���I�|М�s�t�c�@��(�`:В���f�v�@�@4�Y%
+�й�pЀ��������Е0е9Ё?З$ Р:����38�@д.��ЍЅ�e�lЌ���-�@УЫД���b�Ж�hЀ�vЧ�c���������Ѐ ��п�X�H�@�@��D��>�Y.�pЀ�h?�A�Ї�К���{�ZЀЫ�t��	И*���Џй���M��PП,Р�ZЖ�A�������Vо��ЎЀЀ���|�m�\�
+��"�X���	д�n�J>�_в�rЄ�X�PУЂ�oЃ8 Р�ZЊ�~Ѐ9�W8�@д�Ј��б
+Ѐ��и
+��3	��з��Р��iЀ/М(мЬ�|�Q�_��л%��%���В��o�@�@д��
+7Ъ�pЀ�h�Ёо#����*Р�_�e�Щ�mЁ4�@ЯЛ��&�Ј��LгЀЯ�P�5�H����
+���ЀЀ�hЈЎЀБ�K�
+�����й=(�`Ю5�/�D�@�@�Ѕ��о�U-�pЀ����Г��&в6�_��T�]з
+Ј���x�@�`���Gк���M�Р�J(Р�Щ�Б��vБ�3�^�hЀоЇ�a���WМ���}Т0�|��З����Ї�П�l
+ �e�jЁ�XН/�Т�EРЉ��Ѓ���Є4�@п:�пЗЀЁ�|�{
+��?/
+��oб��РЧ#ЈПпиК�}/�G�Х/�p� ��Q�c���i�f�@�@4��L���ZЗ�pЀ�Э���П�[�pаЙЂЏ  Р�zБ��?�8�@����D��c�P'�vУ�(Ѐ+=�Ѐ�U�@�&А
+�����c�HЧ�H��Р/дЍП��F���	�~�t�}ЀЀ��OД�|#�V�
+����"	<И���МЮдаП�s�;4�@�-А���hЀ&���@�X�Q�]�Џ��4�@��Ќ�@��Ф�hЀ8�~�H�`�H����R�_��#И�tТ�6�z�Ё�4�@�c�9�|�s�hЀ�fп!Ч�J���K�����Ѐ5� РН�iРЉ98�@4�u�%а�К���Р�A(�ЙЀ �|У�q
+�����l�Q����РЁ+Ў��о�OУ�h���eЀЀ�hПЀ�@���
+���@<СЀ/�������Ѐ������NЎ�\І�5Л4�@���Qиз�hЀ�F���NЂ3Р�}�{Р��5�nЬ�PЃ4�@�S�R�S�p
+�fЅ��YТ��м���X�0���й�����p�p�UР;А	ЛЀ�R�%�hЀ���PЮ��н�O!��M(ОЯД�� 1ЎЂ�
+��H�3РРй�Sг�xЃ4�@���A<��Ѝ�Г��
+��Й:�Ђ��Р�i��+�XЃ;�����_В)�uЄ
+<�.���!
+�hЀЦ����h
+�����O��Р���4�@�c���Xо�hЀІов�`м�G)�Ра3+Р4�pЯ�Є��' Р�x���08�@4���D�`"��ЍЊ���оР����Ђ �@�Ђ���>�g�P"б�b9���U�@�~лЕЀЀ�h�Њ0��е�
+���x �V�`�\ЀР�Z�@�@4������Q�pЀ��0�ЧІо��Џ���xС�Z ��&�p
+Ф�G�@�@4 �����S�pЀ�h��#,�h�SЀ0 Р�]�@�q&8�@�л��yН7�@������L.Г�Ч�^Ѕ*" Р�{в�D&8�@4�ZЕкОШ��Ѝ���Р��d����KлЀ�|�Щ���dН����x�����П;��
+��z��DР�w��67 Е�Aб�B�xР!��Є�
+��Ї����:
+�Ъо?Н�p�s��Ѐ�*���UОо��zЀЀ�h$��4���z�
+����$�^�p�Q��mл�~Ц+��F�EР�ЃА+�p��s��G�А�����@('��н'о���sЀЀ�hа��5Ѐ3�k�
+�����_��x�Њ����Q(о�Xа�
+Р1�j'��А���������Ѐ�N#��ЉЫ>�t�lЀЀ�h�pл6Ѐ)�[�
+��А�aРЗ������$�Y�i0ЇР�_Ѓ>#�ЊЬ�Ш����Ѐ�d����)�~��dЀЀ�h�hК7о�J�
+���x �c��Э�����~�j!Ѐ���x�P РЊ�pД�����Њ0Т��Р�i���WТ>�U�]ЀЀ�hа�m8�9�
+��(И�dм����~��!Ї�pд	Ра#Ѓ������mЀ2���^���S�Є�UЀЀ�h$59Ѐ��(�
+���X��eа��
+��y�0�QД�`�CР��&Ѓп�+�����N�`В����A��пЂ>Љ�MЀЀ�h���95�
+�����i�`���$���T(�Xг�hЀІ�E���`Х<�Ђ��L�h�4�p���Ф�zІЯ�X Р&Ш���P8�@44$�m������ШЀ��*Ф�T�hЀЖ��ЀЛм�Їп;�D0�p5�xж�5ГІЏ�V
+ Р$��?�D8�@4Д��Н�3�P�S�K/=��Р!Ы2АФ��(��o�O�y
+���h�|ЙЪ��'�hЀІ��н���o���
+�p�����Y����������9	�pЀ�п��gІ�Ђ�X���*���d��?�l�МРУ��Ћ��Ѐ4�@ХЭЖ
+Ѐ?�����и���pЀ�h�Т,��Г�Q��yЀЎ#�Э�F Рк8�u8�@4�@�t�J��]�?Е�@=�hЀ�~�B ������2�/�Ї
+�@�@4��}���'�pЀ�hИН�R�`��y�@�%�&�
+���f��п	����~Ђ�N;Ъ��3о�q���9%4�@�C�o��+���hЀЗ�^�Џ�$
+Ш�]%�|.�
+���б����Ђ��w���~�K�Џ��I�U�^�C����AБ4�@Ѓ���г�m�hЀІГ�h���0�q��oВ
+�X.	�u8�@��{�'�~���Я��ЀНп�mЀЗ�y4��
+���`���v����Р�a����Пб
+�X��Ѐ���@��ЇБ��
+Ё�k��y��r����v���R	�Я�п��@�@4Ѐ�Oо��I�pЀ�h�����зд4(�л# �hЍ����Ѐ4�@�г0пЀ?����aФ��г���Ѕ2им��
+м9Ї���Р�����E-ЀЫ��п�R0П"�|�y>�
+��/3���Е��qЭ�д>Ў�.��Ой���l4�@Ћ����G���hЀІ
+/����Z�@<�/о:�w�$8�@��Љ����ЅЩп���(�~?�m;Ѐ�Ш1Ѐ��)
+����p�ЍЕ��Р!І��?Ш���Sо2���DпВ8�@4�|��к0��G6в�p�@Й�uп�N�BЀ����0Ѐ:8
+�� ,�n��и��РС�lо�_0��Ї�:О�8�@��o�ЌМ��KХ�л
+�@з�l���HЀ�G�/Ѐ3�F
+���p.�l�м����Р�a)кпЗ ��Ї���E�AО���!8�@4Ф�z��R9�йж
+И��Ђ�c��Q�OЀ'/Ѐм�S
+���j�����РСме?��#��'и�J�H��Т�_�B8�@4а�C��<��s
+Ќ�����Y?�p�UЀ�.���`
+��Р��g�Ъ��Р!'бп'��ЏЛ'�O�B�i�_�H8�@���@І�ДН�_(!�P?�K�[Ѐ�O -Ѐ�x�m
+���`Ь�e����@��Р�hЬ�_
+*��П�}���U�-?38�@4�����:!�Ѐ<Ђ)ао��O�бЂа4 Р�h�jп.�L8�@4��ГН���Ы ЌЀ����G �hЀ���FЀЯ�b&а�������И��Ы�T4�@ЍЃ�Л
+�hЀ��Љ�Юо�_�Ћ ���|��Њ�
+��Р�x�УЋ��cХ�����UИ��Н5��Я��@�D�HЀЀ�h0./�|а�P�
+�������_�ФЅ�'*1���'Љ�hЀ�O�Я�iЀ�_�#0��8Ж��попТ���l4�@��n����hЀ�Y�_�~���п��л�@н��Ж�
+��РЗ�ЁЍ�г�S�A��@Ѝ�4:���wл��Ь�RЀЀ�h0Ѕ,����o�
+���@5����_Ѐ���=Ф�lн�З��hЀ�Ъ��Ё�y0�п$���)Ќ9�'��~��ИЪл4�@��X�Ѓ��hЀ�[�B�~�� �B��/��Х�_�H(8�@4�H�j�~�t"�|>� О�T	��P�оЈГЀ��4�@�u�M��[�s�hЀ�m*�!����q���0�p�^��W)8�@��WЛ
+Це���P0п��W��~Ў��4�@ЃБ�A�З��hЀ���~Ш�ЀЋ��пм2Є��@*8�@4Ѐ���Ѐ
+0ЀЧ�t�k�A���Ѐ��cЀЀ�hЀЪ&�еЬ�
+���@пп�M ��q�Г�\Й��`�hЀ��ВЁ��;������+�n�_п�B����U�W�gЀЀ�h�`%��л�
+���@'к� �Ѓ��G�T?Ђ��Р���И�Ѐ1�.�[О��jП�Z>�iЩР���Ѝ�б,Ї4�@Ѓб����wЂЀЯнЖ)Ј�a>��W�pЀ�hА�O�~;���08ЄЀ�z��о�mЉЀ�Т����
+��ЀО�C��^е��Р���O�j��^�D8Ѕ�ГЏ�P�����
+�Hй�Њ�ж��0�s��/�S�ПЁАк РЈТ�z8�@48��w�[��Q�p���r�����hЀ;����|о���T�P4���J�}�Dп��4�I��Р�A�g�y�Љ�Ї4�@Ли�~
+ЋАЪ��пмОЁ�o��Р�ЮЏ;��D8�~=�tз��i�W����(�hЀ������Gп ��
+ЊШ��},ЀШ�oо�AВ.���ЭЂ4�@ЃГ����\Ў�`�`Р ��Y'�~�\дІ4�@к���3��hЀ*-�}�
+�йФЫ�M
+�|��Ц�
+����Я�@���З���@2Ш����g=�Ъ����hЀ�RЍ����#��
+�|�	�~����v�����b�@��Р���>�xнпЂ�;и��6��ПЄ���m�p�B Р�й�лБ8�@4��Ѝ�Л�У�PЀ�T�\<�;з�hЀ���-���ТПЩЀЭЯе�7а
+��
+��НЂ��KРА�i��G��У�|��T
+1��C�Q�hЀ������Ј�|ЛПЯ�@Х����и�Ш?��
+�^�]ЂП�n�OРд������Ѐ�o-�f�sА�Xо�X<�pЀ�ЏЕІ�k�������п�E���v���
+�п�mД�}�hЀк
+����)��
+Ь3�}Ч���`�@���o4)ЀН>:0�pЀ�/$
+�~���oЌ�Э��Ѐ�T��7�s�|���]$Ј�hЀ���ПП,��
+�V���oл��9���_�+�X��>��pЀ�пЩ:В���o�S��Ф�@ ��'�U��k�M��	�hЀз�����w�g0��
+��Э�|ЊИ-����и/0�~#�pЀ��&�Ў�в4оЌ��#�d�Ы�_�N�����~�Z���G4�@Ѓ�T�S��
+�hЀ�gб�O��ЀЏ�T��Ћ��'�h'ЇЀЀ��OЀв=�
+��ЫІШ'��K�Q��N!Ѐ�_#Ё��h�C�P�g����^��mЭЀ/= Ри
+��69�@4�H�Y��{��
+Ђ���@й���И����gж	����cе?	ЈП�пЂЕ?�������9����г�B��З����>�jЀЧ��S(�@����л�RЀЯ��ШКР!�д���Ч��G���S�B��7�`0ГЀ�o���P�t��а�RЄ�|��l�RБ�Jоа�BЉ�
+��Ѐ2�1Ѐ�o��В�Q�|6РЕ	�а�A�cІ�а�A3п�аЁ;Щ�а��з�аА��а��Ю#�а��ЋД�а!��Н�|6����Ѐ�o��І�s�
+���Џо���y�Z��7�`�C<Ж
+��l�@>��Ѐ
+н�h%�а�A&�i�|6�x�jЅЀ�o��Іа�о�|���lЄ��q�а!кбЀ�o����Ђ�uо��Ч��lЀ9�^�а�a�|�hЀ�o��Ђ�dоЈЫ��l�`�K�O�а�A�;Ѐ�o���yноЕ;��lа8�F�а��Ѐ�o��оЛ���Ѐ
+��Ѐ�o���f2����7�`��С��аЉ���n�
+���tж5��l>�|6КЦоЛ%��Ѐ���q�Ѐ�o��&Э�s��7�`�c��д�ай��W�
+��и��*��l����|6Ѝ)
+о����Ѐ���jЀ�o�����m-��7�`�Г�аЙо�G�
+��#��l.�|6��Xом��Ѐ-���
+���dВ��Ѐ�mЉ��
+��І���ЀЭ����
+���T;��Ѐ��п���
+���О
+��ЀЍ�C���
+��Ю
+��Ѐ
+ Р�а��.���_�sЊЀ�h��Ѐ
+"�o��������@Р�sУБ ЩЄЀ�h���JЇ
+���n
+�B��l�����
+��Ю�}�P�@��ЀЭЈ�
+���r�V
+��ЀЍ���
+���T�
+��Ѐ-����
+����Џ��ЀЭ�B��
+���T;��Ѐ�M�U��
+��2���ЀЍ�B
+Ѐ�o�����S��7�`���Ј�а1�F�
+���#��l�d�e�|6А�m	оЛ�b����ЀЍЍ�zЀ�o��&І�E��7�`3Ч�а	���U�
+���	,��l4Р�|6СоЛ�����ЀЍДЀ�o��І�bЕ��7�`Ѓ�����аЙЗ�k�
+�� �{7��l��Р�|6Љ��о��У��Ѐ�MЛ�Ѐ�o���qо�s���l�h�f�F�абЇ$Ѐ�o���F��о(
+��l�]�R�аЁЕ�KЀ�o��І�Q�hоТИ��lаЄ�^�а�Q��ЋЀ�o���F�W�{о��5��l��b�r�а�qК�Ѐ�o���оЬ
+�C��7�`�CЊ����l�-��Ѐ
+�F(�а��Ћ�T�|6 �TжЀ�o���h�p�
+���pЀ�Iо�`О�q��7�`Ѓ��g��l�PЬ2��l�@ЛЙ��lР5��l�С��l�+�L��l���l�'п��7�`�Яо���DБ�
+��агС�|6�@���4��Ѐ
+�M��6�W��ЀН��4��Ѐ�D�}4+�a�<0�����_�А1�{���S���S���S���S���S���S���S���S���S���qоЄ�.�`Д�M�g�OИ�к.�`Д�M�g�OИ�к��]�\���������K)�	�������s�[�Ч�	В��А��П���PБХ������Ц�Z���S�Ж�u�a.�l8Ѓе*Р�\�aНГРЧ����`$���к:��0�ЗмЈ��УЎ�Aл(К��O��Ћ�E�I�W�z�h �����ТЯГ�OЕ��GиЪТОгС�����/��A�m���z0�\ІЎТ����?������@Ў�а�q����R���@л�а�Dд������`��А&��3���P�Р��@��@�K�ЀЈ?�|�w"��p.�о��A�Ў?ЬБ?�@�J�Ѐе)�н��p�f�ЀЙ��Й�Ѐй��Н?�bа�w�Р�~��n�БдС?4У?Ѐ�O��@а>�А��PП�Р�`�@�}��@Ў�<Ъ?���U�Ш�АЬ����HЬ?Э?Ѐ����@ �~�Х��`н�А�BЀ�����hа?Д�OР������Ѐ��Z��@��@�p�Ѐ�Ѐ��Ѐ�����@�Р���Ѐ����Ѐ��Pп�Ѐ���Pк������ д����0б� Ы?�Ш��Ш?�@П��@Ц?�Г�4У?��І�ШП?а�w�ИЛ?�`�f��Ж?А�R�ЬБ?�;�РЋ?��?ЀЈ?-�Ё?4��М�x?������n?�T��А�c?���Э?аз��p�P�lМЀ���k	�L$Ѐ����!��2л ����A�@й�`Э�AЙАБ�@ЈВ �s�l�o�`�\�W7����K�H�Z)Р�@�P>��е�P:�`9ЎЉД8�8ЖХ�P;�<�А�BР�EЁн���N�`�S�p��Р�`��f��2 �y�PЁЄЀЙ ФЀ����е��q�`�t���wЀд��~�� 0������!�@��а�D�k	���q�p�P�� ������������������ Ѓ�RЀ�L���Ё�л��>�4�ЀЩ�Е��Д0? ���@����N?А�L��w�������]?Ё������М�c?ЀЎ���0��|���@�`?���w��@а�����$�S?�`8�Ѓ��W��Ќ9?�`����e�Ц��8
+?А���@���ж?��з��|����pПР�N�`���d��k6�@���Ро�-�@�`гЌШ>)�� 
+��~О<'��	�p�q�МЃ'���	0Ј�Ф#*Ѐ��
+А����зЦ/�@�gР=Ш���Y9�@,�`Р�NЀП�pг�R������$f9e6b526-f122-49ba-a14d-714c3ce2d5e8�B�?�1�1��$d9311051-43c2-48ad-90f8-3b94068503bal�Portal Hole������D�visibilityêpositioned�?��?ə������convex���Ó���E��tangential��@���^���-� ���?�N������Mesh����m�NonParametricGeometry�@��ۀ�@��0��@b�� n]���D�R�A�C�O��аЯ�FР����Э�������}����������������п��������}����}���_в-�KВ�l�Iв�e�YЖ�l��Ж%�Yж�d����зКЪЪ�RЪЪДЪ*�EЩЪЪЪ�RХЪ�J�QХЪЪ�J�QХ�JЩЪ�jЪЩДЦ�RК�кЮ�k*%%ХЩЦК�j*%еЦкЮЩ���R�K-ХЩЦ�R�KЭ��R�KЭ��R�R�R�RК�J�i*е��К�jЪЩ��к.%(кРРЩ�y(Н�a��еЯ�s�h��д��ее�g��Ю�лН�\Ц7���П�K���Y���9Г�N%А�О�eО��'І��B�n�RКН����|А7�fЄЧ���J�m��_�_��ВЦ�����о�S���Ђ��О�a�|Љ�\��Ѝ>У�F0ТЩ����О8Ъ?Щ���,Ъ�����^�		/0��MА000�}�`0�Y+�GП��Р���zЈ��w��6
+4���hП�l�l�������m��cи������/�j�U�a�Q%ИЯ������G�Ш�XОЌ��[�L�����j6Ю*Ѝ�K�zЃ�@���ЍС�D�N�r��8,4<Б��.Ј������_Й!�п�jИ)�*����t%��dЃ���Й���NЌ�x���[�Э����з����d�K5��
+���^ЀА'���Я��Л�@�_�v2Їм	�Х'�s�|Ю�{?Њ�\�u2Ї��Й�\,�%�ЖЕ��[К�L��Џ������н�Л*�L��Ї�R��Ап����m��K�������_%о��f��!��KЀ�h��_�rоЈ-��Ї��KЀ$�U��K��мн���L�l0��C.�Q'�s<ЅЗ?����L�����@�\,�%�y�b?���������_ЋЗ.�P�i��ЏЉ�Y�D�C��8�G�D��M��ЏЛ3�D�Џ��Xп�Aа�M��	�DМ��@Р=ЀУкЏЎЦ�C��w��y8�`�дЏ���n�CО�А��4Ѐ�uЯЏ��2�CС���,/�p��ФЏ��Ю�B�f�Ш�l(ааП���f�B������`��#�иКЏ(�BиЀ�И���Е�����A��ИЍ��пЎЏ���H�A��� '�@�mЈЏЮ���@��a�Ј�O	�FЄЏШ�k�@!�(�cР�LЀ�|�@���D�E��PЂ�|�O�CШ?ІЎ�Д!�А�w�Oк?�X�ЄБ��P�K�r�O�[�m>Ь�������Ѐ�lЎ=��О��xЬ�� Н�hЏ�c��<�y��T�R����o�eЏ�M-<М8�Д5л����aЏ�d7;�A�МИЫ����_Д�r:�u��0ОУ���^��9в��мЈЛ�`��]�O���o9�����YГЀ�I�]�O6б8�m�����жЂ��&�]��?І*�m����D���&��За3�m����D��;��&�]Џ��
+
+�m���а��б�@9�]�O�|�,�q���СІЀР�]����8�B����p�mЏЀ�^��r9�y���p��П�Ї�_Џ28:3����{Ы��bЏ�~5;'.��Ѓз�`�m�dЏ�r�;��Z��>�� �o�f���i�e<,�}�Єй��РЫ�h�O8��<�Yж��P�p��0з�l�OЬЋ=	���h��������r��й�j>б�A�,�S�Р�w���A
+?ЦГ��L�t�И�z�O��q?�����pк����{Ѐ���o�@=�G� ЈГІ�eЛ�@>Ч��X+0ЍЏ�^&�Aк���`Ю�ОБЁ�|�A��6����`�IЖ*���AГЂ�8�p�oНЏа�A�B�j��01&Ѐ�|ТЋ�B�K�t���,а�xЪ��B�q���А1���uвЏ���P�C�q'��5�СзЏ�Ј�Cб��}:Р�WнЦо�CЙ9�И?��К��ЏУ��C��Б������Aо����3�DП����U�D����Ћм�|�� <�O�4�Б�����o�_�����s�tп���
+<Тп�ЀЏ��{��]�����ж�o����|�C�m=�@�<��~�t�r	�L���������ж&аб��Я>�cОа���g�|�<Ї�|пЌРмЪ�\Ь���A�=��Tв��
+,�������%,85�����t�@�mЏ=�А�М�0�pл��ЇЉл�
+��Ѐ�I	РГ9��з�I���c��
+�%�u=4ЕЀ��Ї�c��Г�+�|���w=Ќ�����?Ч��Гн�m�|	�|=����7���ХМ�|�Ђ=<����o�E��Г�[м�|РЋ=������Ї���3�V��|ЬЖ=��Ь���������л(�ВШ=���a�����-����b�о=�������П���sЮК�|����=�q�Y���7������x���|�=�н�����Ь��3Ї��|���=��v���'Є�ЃЌ
+�Х>��w���oЫ�У�c'��d)>0����'�U�#Ч�J��:>�F#�����u��C%�`�|�D�M>м�v����)���Д�}�|��k>��]��Ч������И�|�sЊ>Ю2
+������>г�|�Ъ>������w�У�����Њ��>������w�z�#�^���|в��>Ю��
+��п�������|�Z�>КЩ����L��C�Z���}?�D�u��������cк����&?���z���G���п�|�J?�D�Sа���П��!Ѐ��Н������?����A�@П��Ѐ�N���o����_Б����ЙЃ��Q�@'�s�+��ЀП�I�P	Ѐ����ЍРГ9��Ј8�1?�7	ЀХк����:0�����~���Ї��,П���rЀ�N��;�А��Д�OЀЯ��#�@'�s�м�R�@У��8з���ДЦ�+�M�11Ћ�ЛИ7�gЈ�з���!"Ё�~�WІ�Ї�7
+�Ё�@�{��F�u�MЇ�ЋП�Б���m��d��НІ�г���[�f� �TК�Ѕ���Й�Б���Uо+�DЅ����A���Lо:2�}Є��W��e�C���+ДЗЃ��'�1/оЁ��DЂ�Ы
+���о�o�l.Ё���Ј��u
+��Q�qЀ�З	�Ё�o>Б�О�oЭ���KА��i�о���О2Є�~�а�	#���~З�Й?�}��k�I��iЫ��>�e�О�R�e�|��[��Й��п�~Н���Ѕ�{��Џ���б�~�B��ЊС�z�Џ=���XУ�~"��О�J�J�y��Э�бЩЅ�~��Ов�f�w���T�б-�n�п�����n�v���#���Ў�^>���О�s�u�Ѓ���д�NоЎо���s�t�7����QУ>>жмО�q�s�ж��г&о�к�i���q�/Щ���&о�Mк���V�p���Ф��Yг�cо�MкО??�`ЋЀЀ���@�UЀ����]ЀЏ��\Ѐ����x�o�~)��j�~�J��[��L�f��T�Y�;�i>���%�Ѐ�Њ�RЀ���PЀ�O2�OЀЯ!�p�MЀ�#Ж�KЀ��С�Иа&��XК	�Ш��Y����q������E�KЀЏ��~�_М��`�cнП�o5��_Ў�N����W�п���W�|Є��Э���Я��iЈл�П�H��?"�P
+���_��K�_ЋР.п�����ІЧ��Њ�K�Q����І'�F�++=ЍЌ���H�H�iЃ����Е
+�]�x�x�x�x�x�x�x�x�x >����Ќ:�f�`��1�Ш���ОЄ��Ѓ��Ю���j�d����rТ�{��Ѝ�~�Ј��Р���y���mЎ�A
+��Ѓ�Т��v�bЏК?�X�з���yРК*Ь���Ѕ�@Ј�^�b
+��І�@Ј�^�b
+��І�@Ј�^�b
+��І�]���i�Y�O�y�x�x�x�x�x�x�x�x�x���}Ч��?��� �~�I���а=�b"�@�Y�}�@ЄИ�u��$�o��г�x�i���_А�d�@�D�`�@��Ј�\�@П�L�Y�@�oЀ�V�G �T�@$ �R���x�P�@� �O���N�����X�MЀ����L��д�L�����L��$�MЀ�����MЀ��Ь�N������O���`�Q��0�S�@?�X�U�@�e���W�@Б���Z����(�^��b�@�@�`�fЀЋ�\�k��q�@�BЀ�w��а���~�@
+��A�TЙ#���W?,Ш��
+
+Ѐ�k4ДЀ�nЩ36�Р??�TМ?�`�g��@�bШ�c�� ��8Я�@���он�
+���P?4�H?и�J4ДЀм����Q��������W?�t���К���t�v?�@����P�o
+�Ѐ�{��@/��@Ю0�����@Ц�Ѐ�`�Ь�L�Ѐ
+��@� �@Ц����К?�Z�а���d�]�`Њ���~���5��V Ф���К�Ѐ�`�����O�o�G���_�Б���а?ЄЯ?о�������n���Ы?М7��M�p����p����`Ь�C�в?�б?�|�Ѐ����Щ�ЉЬ>г?��в?0����@3����Hг?0���Ѐ1�1+Ѐ��Ѝ�Ў�=��ЕШЩ?ФЪ? а������Є�МЮ?п���H��Pб?ИЋ�YРЛ�ЀР��.<�\Џ���Д�А�R�@�B��м��Б?Ѐ�R��@�t��g��Л?��w�����u����`���@Р��Р��O���}Ѐ���� Ѐ���������������ro��layers�name���rp��fi�data�id�rq��mode�isMask�visible�bumpMap�bumpMapIntensity�roughnessMap�alphaOverride�category�specular�shininess�type�occlusion�alpha�����phongQ�?ə������?ə������?ə������light��?�333333�layer1p�?��4y����rr��alpha�mode�isMask�visible�type�color�åcolorQ�layer2�Portal Hole Material�B������TB�$da0cd5d5-4b26-4bcd-a695-60ab91cdfcafZ����äMesh�D�visibilityêpositioned�?��?ə������convex���Ó���E��tangential����A�Ȭ���i��p������rs��width�widthSegments�heightSegments�depthSegments�cornerRadius�cornerSegments�height�depth�type�@�m<]�8 �@�o=p��
+�@�m<]�8 �CubeGeometryo��pq�����phongQ�?ə������?ə������?ə������light��?�333333�layer1pr�åcolorQ�layer2�Floor Material�Floor�B��GUǙ��$1dd21595-ccf4-414f-ac52-22acd4c70809Z��[�?ݜ*O�1��$3f7b66ef-6802-460c-a908-b0b651327393�rt��name�geometry�material�position�scale�rotation�hiddenMatrix�cloner�State]^�]���6��ZE��@���\(����ru��radial�linear�grid�toObject�randomnessObject�count]]]]]��[�?�0CL Z�$bb12dd09-5ef7-4130-8c77-08bf567c2aa4_�Start���[�?�3v^��|�$97e74e33-0cdf-4a11-99bf-8aefb09bcd26`�Transition�$1dd21595-ccf4-414f-ac52-22acd4c70809��a�$c901af2d-34ca-4611-b9b5-95a18426c68cb���start-once�normal��
+a�$dca65289-5eaa-422a-a2c5-a412bd997de7b�$3f7b66ef-6802-460c-a908-b0b651327393�start-once�normal���start-once�normal�OnceäMesh�D�visibilityêpositioned�?��?ə������convex���Ó���E��tangential�Э�@��}��1��p�p�pcælinear�d�@�+^�@�h¡y���e��random����x�c�normalf���<Цg���@}��@���+S���@VC7V����h�d���
+�perlin�����rv��width�widthSegments�heightSegments�depthSegments�cornerRadius�cornerSegments�depth�height�type���Z<�CubeGeometry�$1a75707e-ee4c-48c7-8cee-589f54a26872�Stair�B����$_��$f3d84933-f2bb-4154-8304-0246304f078aZ��[�?ݜ*O�1��$3f7b66ef-6802-460c-a908-b0b651327393t�State]^�]���6��ZE��@���\(���u]]]]]��[�?�0CL Z�$bb12dd09-5ef7-4130-8c77-08bf567c2aa4_�Start���[�?�3v^��|�$97e74e33-0cdf-4a11-99bf-8aefb09bcd26`�Transition�$f3d84933-f2bb-4154-8304-0246304f078a��a�$c901af2d-34ca-4611-b9b5-95a18426c68cb���start-once�normal��
+a�$dca65289-5eaa-422a-a2c5-a412bd997de7b�$3f7b66ef-6802-460c-a908-b0b651327393�start-once�normal���start-once�normal�OnceäMesh�D�visibilityêpositioned�?��?ə������convex���Ó���E��tangential�Э�@��}��1��p��pc¦linear�d�@�+^�@�h¡y���e��random����x�c�normalf���<Цg���@}��@���+S���@VC7V����h�d���
+�perlin����v���Z<�CubeGeometry�$1a75707e-ee4c-48c7-8cee-589f54a26872�Cloned Stairs�B��TҤ�$b263adf3-847f-407b-9d22-97e7047b8d1e�rw��states�events�visible�raycastLock�physics�pathSnapping�position�rotation�scale�hiddenMatrix�cloner�far�type�perspective�orthographic�up�isUpVectorFlipped�targetOffset�name������D�visibilityêpositioned�?��?ə������convex���Ó���E��tangential���^P����@�sz	P��@b��|l����҄Y�!��@Bd�p~:\�@���e��?���������?�˼��<��<��<�˼��?��=0�=@˽ �����OrthographicCameraX�F-Y���y`�?ݜ!j��W�˾Rz����?��������>Jh�{����Camera��rx��orbitControls�playPage�withBackground�preventScroll�preventTouchScroll�hideCursor�mouseEventTarget�joystickSizeAndXYOffset�settings�stopRaycast�hdTransmission�ry��enablePan�enableZoom�enableRotate�enableDamping�rotationLimitsMode�rotationVerticalOffset�rotationHorizontalOffset�rotationSoftLimit�panLimitsMode�panVerticalOffset�panHorizontalOffset�panSoftLimit�zoomLimitsEnabled�zoomLimits�autoRotate�autoRotateSpeed�autoRotateClockwise�hoverRotatePanMode�hoverRotatePanStrength�hoverRotateDamping�isTouchZoom�orbitTouches�panTouches�resetHoverEffectOnPointerLeave�����rz��min�max�?�!�TD-�?�!�TD-z�?�!�TD-�?�!�TD-z����z�����z�?����������?����$a218fcc3-276b-49b9-b485-49037fd14f5f���æcanvas���x��show��x��show��x��show��x��show��x���show��x��show��x��show��x��show��x��show��x���show��x��show��x���show�r{��image�video�web�r|��format�ratio�jpg�r}��format�imageFormat�fps�mbps�ratio�stopMode�duration�gif�jpg�P�fixed���r~��logo�compress�preset�preload�hint�������r��mode�prompt�negativePrompt�style�isRandomSeed�seed�guessMode�advanced�steps�guidanceScale�controlNetScale�modifiers�line-art-both���r@��id�label�style�prompt�basic�Basic�None��������@�rA��weather�shadows�lightOrigin�temperature�sun�camera�environment�particles�nature�floor��rB��$72fc2993-2da3-4b6b-96ac-2879db3a28bd�rC��preset�allowResponsive�size�coords�sceneScale�color�fullscreen���ܒ�rD��r�g�b�a�?��rE��catelogs�materials�images�videos�colors�audios�particles�fonts�variables�lib�]��rF��$1a75707e-ee4c-48c7-8cee-589f54a26872�$92707c39-baab-48cc-8d7e-a1922408364c�$18b4b78f-709b-4c1b-9d22-d9fbf9f5cc1d�$f9e6b526-f122-49ba-a14d-714c3ce2d5e8o��pq�����phongQ�?ə������?ə������?ə������light��?�333333�layer1[�?��ج��R�$bc319ed0-3f99-45eb-92e0-e612ccc19c1f�rG��alpha�mode�isMask�visible�type�color�bias�scale�intensity�factor�çfresnelD˿��
+=p��?�ffffffp�rH��alpha�mode�isMask�visible�type�gradientType�smooth�colors�steps�isVector�isWorldSpace�origin�direction�near�far�ådepth��?ⲳ2{@��?���&!���?�Ұ�=+��?���QR$�?Ǉ@N���?��^rT�����8�Ȧlayer2�Stairo��pq�����phongQ�?ə������?ə������?ə������light��?�333333�layer1p�rI��alpha�mode�isMask�visible�type�gradientType�smooth�colors�steps�num�angle�offset�morph�?��ègradient��?Ӂ
+_o\�?�u!5�|�?��տ`��i��p�p�p�p�p�p�p�p����layer2�Spaceo��p˿��{#n>(�rJ��alpha�mode�isMask�visible�type�gradientType�smooth�isVector�isWorldSpace�origin�direction�colors�steps�near�far�ådepth�������?�p��
+=p��@67��~,�@V���7�ߦlayer2pq�����phongQ�?ə������?ə������?ə������light��?�333333�layer1�Starso��pq�����phongQ�?ə������?ə������?ə������light��?�333333�layer1pr�åcolorQ�layer2�Portal�]�]�]�]�]�]���rK��images�videos�colors�audios�particles�fonts�materials�components�variables�]�]�]�]�]�]�]�]�]�1.3.1

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webshot Sign In Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/signin.css') }}">
+</head>
+
+<body>
+    <div class="box">
+        <span class="borderLine"></span>
+        <form id="login-form">
+            <h2>Sign in</h2>
+
+            <!-- Email Input -->
+            <div class="inputBox">
+                <input type="email" id="email" required="required">
+                <span>Email</span>
+                <i></i>
+            </div>
+
+            <!-- Password Input -->
+            <div class="inputBox">
+                <input type="password" id="password" required="required">
+                <span>Password</span>
+                <i></i>
+            </div>
+
+            <div class="links">
+                <a href="#">Forgot Password</a>
+                <a href="{{ url_for('login')}}">Sign up</a>
+            </div>
+
+            <button type="submit" value="Login" id="login-btn">Login</button>
+            <br>
+            <p id="loading-message" style="display: none; color:#fff;">Logging in, please wait...</p>
+        </form>
+    </div>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+        import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyAT53j_k9Alzr7O2HDmeQ8_tfZTdQnde48",
+            authDomain: "webshot-c0c2a.firebaseapp.com",
+            databaseURL: "https://webshot-c0c2a-default-rtdb.firebaseio.com",
+            projectId: "webshot-c0c2a",
+            storageBucket: "webshot-c0c2a.firebasestorage.app",
+            messagingSenderId: "917217158557",
+            appId: "1:917217158557:web:4715f7e0bf7208cf79bb74",
+            measurementId: "G-E8JJ3NZ6KE"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        const loginForm = document.getElementById('login-form');
+        const emailInput = document.getElementById('email');
+        const passwordInput = document.getElementById('password');
+        const loginButton = document.getElementById('login-btn');
+        const loadingMessage = document.getElementById('loading-message');
+
+        loginForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const email = emailInput.value.trim();
+            const password = passwordInput.value.trim();
+
+            if (!email || !password) {
+                alert('Please fill in all the fields.');
+                return;
+            }
+
+            loginButton.disabled = true;
+            loadingMessage.style.display = 'block';
+
+            try {
+                const userCredential = await signInWithEmailAndPassword(auth, email, password);
+                const user = userCredential.user;
+                alert('Login Successful 🎉');
+
+                // Redirect user to index page after successful login
+                window.location.href = "{{ url_for('index') }}";
+            } catch (error) {
+                console.error('Error Logging In:', error);
+                displayFriendlyError(error.code);
+            } finally {
+                loginButton.disabled = false;
+                loadingMessage.style.display = 'none';
+            }
+        });
+
+        function displayFriendlyError(code) {
+            let message = 'An error occurred, please try again.';
+            switch (code) {
+                case 'auth/user-not-found':
+                    message = 'No user found with this email.';
+                    break;
+                case 'auth/wrong-password':
+                    message = 'Incorrect password. Please try again.';
+                    break;
+                case 'auth/invalid-email':
+                    message = 'Invalid email address format.';
+                    break;
+                case 'auth/too-many-requests':
+                    message = 'Too many attempts. Try again later.';
+                    break;
+            }
+            alert(message);
+        }
+    </script>
+</body>
+
+</html>
